@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+		<property name="connection.url">jdbc:sqlserver://localhost:1433;DatabaseName=FUCarRentingSystemDB;encrypt=true;trustServerCertificate=true</property>
+		<property name="connection.username">sa</property>
+		<property name="connection.password">12345</property>
+		<property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+		<mapping class="fe.hsf301.ass.pojo.CarProducer" />
+		<mapping class="fe.hsf301.ass.pojo.Car" />
+		<mapping class="fe.hsf301.ass.pojo.Customer" />
+		<mapping class="fe.hsf301.ass.pojo.CarRental" />
+		<mapping class="fe.hsf301.ass.pojo.Review" />
+		<mapping class="fe.hsf301.ass.pojo.Account" />
+	</session-factory>
+</hibernate-configuration>

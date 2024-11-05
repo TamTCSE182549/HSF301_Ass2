@@ -1,0 +1,23 @@
+.login-pane {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 40;
+}
+
+.text-field, .password-field {
+    -fx-border-radius: 5;
+    -fx-border-color: #cccccc;
+}
+
+.button {
+    -fx-background-color: #4285f4;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #357ae8;
+}
+
+.error-label {
+    -fx-text-fill: red;
+}/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */

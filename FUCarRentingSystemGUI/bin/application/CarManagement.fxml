@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="958.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CarManagementController">
+   <children>
+      <Text layoutX="43.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Management">
+         <font>
+            <Font name="Forte" size="30.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.6969697037429521" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.5926743745803833" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="57.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car ID" />
+      <Text layoutX="56.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Name" />
+      <Text layoutX="56.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Model Year" wrappingWidth="83.92147827148438" />
+      <Text layoutX="56.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color" />
+      <Text layoutX="56.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacity" wrappingWidth="52.6875" />
+      <Text layoutX="57.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+      <Text layoutX="57.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Import Date" />
+      <Text layoutX="55.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rent Price" />
+      <Text layoutX="57.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" />
+      <Text layoutX="56.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Producer ID" />
+      <TextField fx:id="txtCarID" editable="false" layoutX="140.0" layoutY="77.0" prefHeight="26.0" prefWidth="175.0" />
+      <TextField fx:id="txtCarName" layoutX="139.0" layoutY="107.0" prefHeight="26.0" prefWidth="175.0" />
+      <TextField fx:id="txtCarModelYear" layoutX="140.0" layoutY="140.0" prefHeight="26.0" prefWidth="175.0" />
+      <TextField fx:id="txtColor" layoutX="139.0" layoutY="169.0" prefHeight="26.0" prefWidth="175.0" />
+      <TextField fx:id="txtCapacity" layoutX="139.0" layoutY="199.0" prefHeight="26.0" prefWidth="175.0" />
+      <TextField fx:id="txtDescription" layoutX="139.0" layoutY="232.0" prefHeight="26.0" prefWidth="175.0" />
+      <TextField fx:id="txtRentPrice" layoutX="139.0" layoutY="301.0" prefHeight="26.0" prefWidth="175.0" />
+      <TextField fx:id="txtStatus" layoutX="139.0" layoutY="336.0" prefHeight="26.0" prefWidth="175.0" />
+      <TextField fx:id="txtProducerID1" layoutX="139.0" layoutY="363.0" prefHeight="26.0" prefWidth="175.0" />
+      <TableView fx:id="tblCars" layoutX="28.0" layoutY="401.0" prefHeight="200.0" prefWidth="901.0">
+        <columns>
+          <TableColumn fx:id="carID" prefWidth="40.0" text="Car ID" />
+          <TableColumn fx:id="carName" prefWidth="84.79995727539062" text="Car Name" />
+            <TableColumn fx:id="carModelYear" prefWidth="106.40000915527344" text="Car Model Year" />
+            <TableColumn fx:id="color" minWidth="7.20001220703125" prefWidth="61.5999755859375" text="Color" />
+            <TableColumn fx:id="capacity" prefWidth="64.79998779296875" text="Capacity" />
+            <TableColumn fx:id="description" prefWidth="220.0" text="Description" />
+            <TableColumn fx:id="importDate" minWidth="0.0" prefWidth="78.4000244140625" text="Import Date" />
+            <TableColumn fx:id="rentPrice" prefWidth="67.20001220703125" text="Rent Price" />
+            <TableColumn fx:id="status" prefWidth="62.4000244140625" text="Status" />
+            <TableColumn fx:id="producerName1" prefWidth="119.20001220703125" text="Producer Name" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="txtImportDate" layoutX="139.0" layoutY="266.0" />
+      <Text layoutX="531.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Producer Management">
+         <font>
+            <Font name="Forte" size="30.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" startX="1.0" startY="0.662878787878788">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.6390166878700256" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="517.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Producer ID" />
+      <TextField fx:id="txtProducerID2" editable="false" layoutX="615.0" layoutY="73.0" prefHeight="26.0" prefWidth="175.0" />
+      <Text layoutX="517.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Producer Name" />
+      <TextField fx:id="txtProducerName" layoutX="615.0" layoutY="104.0" prefHeight="26.0" prefWidth="175.0" />
+      <Text layoutX="517.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+      <TextField fx:id="txtAddress" layoutX="615.0" layoutY="137.0" prefHeight="26.0" prefWidth="175.0" />
+      <Text layoutX="517.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" />
+      <TextField fx:id="txtCountry" layoutX="615.0" layoutY="166.0" prefHeight="26.0" prefWidth="175.0" />
+      <TableView fx:id="tblProducers" layoutX="517.0" layoutY="224.0" prefHeight="162.0" prefWidth="411.0">
+        <columns>
+          <TableColumn fx:id="producerID" prefWidth="75.0" text="Producer ID" />
+          <TableColumn fx:id="producerName2" prefWidth="140.00006103515625" text="Producer Name" />
+            <TableColumn fx:id="address" prefWidth="88.7999267578125" text="Address" />
+            <TableColumn fx:id="country" prefWidth="105.60009765625" text="Country" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnCreateProducer" layoutX="819.0" layoutY="73.0" mnemonicParsing="false" onAction="#handleCreateProducer" prefHeight="26.0" prefWidth="111.0" text="Create Producer" />
+      <Button fx:id="btnUpdateProducer" layoutX="818.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleUpdateProducer" prefHeight="26.0" prefWidth="111.0" text="Update Producer" />
+      <Button fx:id="btnDeleteProducer" layoutX="818.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleDeleteProducer" prefHeight="26.0" prefWidth="111.0" text="Delete Producer" />
+      <Button id="btnCreateCar" fx:id="btnCreateCar" layoutX="342.0" layoutY="78.0" mnemonicParsing="false" onAction="#handleCreateCar" prefHeight="27.0" prefWidth="92.0" text="Create Car">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button id="btnUpdateCar" fx:id="btnUpdateCar" layoutX="342.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleUpdateCar" prefHeight="27.0" prefWidth="92.0" text="Update Car">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button id="btnDeleteCar" fx:id="btnDeleteCar" layoutX="342.0" layoutY="137.0" mnemonicParsing="false" onAction="#handleDeleteCar" prefHeight="27.0" prefWidth="92.0" text="Delete Car">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnCustomerManagement" layoutX="2.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleCustomerManagement" text="Customer Management" />
+   </children>
+</AnchorPane>

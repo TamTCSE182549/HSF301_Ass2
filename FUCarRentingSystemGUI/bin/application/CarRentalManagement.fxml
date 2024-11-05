@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="753.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CarRentalManagementController">
+   <children>
+      <Text layoutX="219.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Rental Management">
+         <font>
+            <Font name="Sitka Text" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="68.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car ID" />
+      <Text layoutX="67.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID" />
+      <Text layoutX="67.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rent Price" />
+      <Text layoutX="68.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pickup Date" />
+      <Text layoutX="68.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Date" />
+      <Text layoutX="68.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" />
+      <TextField fx:id="txtCarID" layoutX="151.0" layoutY="76.0" prefHeight="26.0" prefWidth="175.0" />
+      <TextField fx:id="txtCustomerID" layoutX="151.0" layoutY="107.0" prefHeight="26.0" prefWidth="175.0" />
+      <TextField fx:id="txtRentPrice" layoutX="151.0" layoutY="138.0" prefHeight="26.0" prefWidth="175.0" />
+      <TextField fx:id="txtStatus" layoutX="151.0" layoutY="240.0" prefHeight="26.0" prefWidth="175.0" />
+      <Button fx:id="btnCreate" layoutX="362.0" layoutY="76.0" mnemonicParsing="false" onAction="#handleCreate" prefHeight="26.0" prefWidth="55.0" text="Create" />
+      <Button fx:id="btnUpdate" layoutX="361.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleUpdate" text="Update" />
+      <TableView fx:id="tblCarRentals" layoutX="37.0" layoutY="278.0" prefHeight="200.0" prefWidth="703.0">
+        <columns>
+            <TableColumn fx:id="carID" prefWidth="48.0" text="Car ID" />
+          <TableColumn fx:id="carName" prefWidth="102.4000244140625" text="Car Name" />
+            <TableColumn fx:id="customerID" prefWidth="75.0" text="Customer ID" />
+          <TableColumn fx:id="customerName" prefWidth="103.20001220703125" text="Customer Name" />
+            <TableColumn fx:id="rentPrice" prefWidth="77.60003662109375" text="Rent Price" />
+            <TableColumn fx:id="pickupDate" prefWidth="95.20001220703125" text="Pickup Date" />
+            <TableColumn fx:id="returnDate" prefWidth="83.199951171875" text="Return Date" />
+            <TableColumn fx:id="status" prefWidth="110.4000244140625" text="Status" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="txtPickupDate" layoutX="151.0" layoutY="174.0" />
+      <DatePicker fx:id="txtReturnDate" layoutX="151.0" layoutY="208.0" />
+      <Button fx:id="btnCustomerManagement" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleCustomerManagement" text="Customer Management" />
+   </children>
+</AnchorPane>

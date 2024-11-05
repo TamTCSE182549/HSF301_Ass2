@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
+   <children>
+      <TableView fx:id="tblCustomer" layoutX="33.0" layoutY="401.0" prefHeight="235.0" prefWidth="805.0">
+        <columns>
+            <TableColumn fx:id="customerId" prefWidth="27.999996185302734" text="ID" />
+          	<TableColumn fx:id="customerName" prefWidth="105.60000610351562" text="Customer Name" />
+          	<TableColumn fx:id="mobile" prefWidth="94.40003967285156" text="Mobile" />
+            <TableColumn fx:id="birthday" prefWidth="115.199951171875" text="Birthday" />
+            <TableColumn fx:id="identityCard" prefWidth="90.4000244140625" text="Identity Card" />
+            <TableColumn fx:id="licenceNumber" prefWidth="107.20001220703125" text="Licence Number" />
+            <TableColumn fx:id="licenceDate" prefWidth="92.0" text="Licence Date" />
+            <TableColumn fx:id="email" minWidth="0.0" prefWidth="167.20013427734375" text="Email" />
+        </columns>
+      </TableView>
+      <Text layoutX="37.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Management" wrappingWidth="336.97149658203125">
+         <font>
+            <Font name="Forte" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="94.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="92.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="94.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="93.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birthday">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="92.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identity Card">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="92.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Licence Number">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="93.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Licence Date">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCustomerId" editable="false" layoutX="255.0" layoutY="88.0" prefHeight="26.0" prefWidth="222.0" />
+      <TextField fx:id="txtCustomerName" layoutX="255.0" layoutY="117.0" prefHeight="26.0" prefWidth="222.0" />
+      <TextField fx:id="txtMobile" layoutX="255.0" layoutY="147.0" prefHeight="26.0" prefWidth="222.0" />
+      <TextField fx:id="txtIdentityCard" layoutX="255.0" layoutY="204.0" prefHeight="26.0" prefWidth="222.0" />
+      <TextField fx:id="txtLicenceNumber" layoutX="255.0" layoutY="232.0" prefHeight="26.0" prefWidth="222.0" />
+      <TextField fx:id="txtEmail" layoutX="255.0" layoutY="288.0" prefHeight="26.0" prefWidth="222.0" />
+      <Text layoutX="93.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnCreate" layoutX="91.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleCreate" text="CREATE" />
+      <Button fx:id="btnUpdate" layoutX="164.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleUpdate" text="UPDATE" />
+      <Button fx:id="btnDelete" layoutX="236.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleDelete" text="DELETE" />
+      <DatePicker fx:id="txtBirthday" layoutX="255.0" layoutY="177.0" prefHeight="26.0" prefWidth="222.0" />
+      <DatePicker fx:id="txtLicenceDate" layoutX="255.0" layoutY="261.0" prefHeight="26.0" prefWidth="222.0" />
+      <Text layoutX="565.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Management List">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnCarProducerManagement" layoutX="680.0" layoutY="147.0" mnemonicParsing="false" onAction="#handleCarProducerManagement" text="Car Producer Management" />
+      <Button fx:id="txtCarManagement" layoutX="731.0" layoutY="189.0" mnemonicParsing="false" onAction="#handleCarManagement" text="Car Management" />
+      <Button fx:id="btnCarRentalManagement" layoutX="694.0" layoutY="232.0" mnemonicParsing="false" onAction="#handleCarRentalManagement" text="Car Rental Management" />
+   </children>
+</AnchorPane>
